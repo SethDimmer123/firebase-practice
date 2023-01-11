@@ -1,6 +1,7 @@
 import './App.css';
 import { auth } from './firebase/init';
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword,
+ signInWithEmailAndPassword } from "firebase/auth";
 
 function App() {
   function register() {
@@ -15,7 +16,7 @@ function App() {
   }
 
   function login() {
-    
+
   }
   return (
     <div className="App">
