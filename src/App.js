@@ -13,6 +13,10 @@ function App() {
       console.log(error);
     })
   }
+
+  function login() {
+    
+  }
   return (
     <div className="App">
       <button onClick={register}>Register</button>
