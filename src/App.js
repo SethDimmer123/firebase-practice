@@ -5,6 +5,13 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 function App() {
   function register() {
     console.log('register')
+    createUserWithEmailAndPassword(auth, 'email@email.com', 'test123')
+    .then((user) => {
+      console.log(user)
+    })
+    .catch((error) => {
+      console.log(error);
+    })
   }
   return (
     <div className="App">
