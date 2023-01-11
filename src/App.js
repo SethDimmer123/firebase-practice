@@ -17,6 +17,12 @@ function App() {
 
   function login() {
     signInWithEmailAndPassword(auth, 'email@email.com', 'test123')
+    .then((user) => {
+      console.log(user)
+    })
+    .catch((error) => {
+      console.log(error)
+    })
   }
   return (
     <div className="App">
