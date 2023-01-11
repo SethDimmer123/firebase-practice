@@ -1,7 +1,8 @@
 import './App.css';
 import { auth } from './firebase/init';
 import { createUserWithEmailAndPassword,
- signInWithEmailAndPassword } from "firebase/auth";
+ signInWithEmailAndPassword,
+signOut } from "firebase/auth";
 
 function App() {
   function register() {
@@ -24,9 +25,15 @@ function App() {
       console.log(error)
     })
   }
+
+  function logout() {
+    
+  }
   return (
     <div className="App">
       <button onClick={register}>Register</button>
+      <button onClick={login}>Login</button>
+      <button onClick={logout}>Logout</button>
     </div>
   );
 }
