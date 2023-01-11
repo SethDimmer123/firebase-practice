@@ -1,10 +1,13 @@
 import './App.css';
-import { auth } from './firebase/init'
+import { auth } from './firebase/init';
 
 function App() {
+  function register() {
+    console.log('register')
+  }
   return (
     <div className="App">
-      test
+      <button onClick={register}>Register</button>
     </div>
   );
 }
