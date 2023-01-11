@@ -16,7 +16,7 @@ function App() {
   }
 
   function login() {
-
+    signInWithEmailAndPassword(auth, 'email@email.com', 'test123')
   }
   return (
     <div className="App">
